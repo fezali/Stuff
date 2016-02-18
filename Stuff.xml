@@ -1,1 +1,83 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="controls_repeat" id="341" inline="true" x="-180" y="-275">
+    <value name="TIMES">
+      <block type="math_number" id="362">
+        <field name="NUM">2</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="robot_delay" id="142" inline="true">
+        <value name="DELAY">
+          <block type="math_number" id="238">
+            <field name="NUM">5000</field>
+          </block>
+        </value>
+        <next>
+          <block type="movement_forward" id="257"></block>
+        </next>
+      </block>
+    </statement>
+    <next>
+      <block type="robot_delay" id="1137" inline="true">
+        <value name="DELAY">
+          <block type="math_number" id="1151">
+            <field name="NUM">5000</field>
+          </block>
+        </value>
+        <next>
+          <block type="oled_drawtext" id="428">
+            <field name="TEXT">Hi</field>
+            <next>
+              <block type="movement_stop" id="518">
+                <next>
+                  <block type="movement_forward" id="681">
+                    <next>
+                      <block type="robot_delay" id="767" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="782">
+                            <field name="NUM">3000</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="movement_right" id="691">
+                            <next>
+                              <block type="robot_delay" id="1036" inline="true">
+                                <value name="DELAY">
+                                  <block type="math_number" id="921">
+                                    <field name="NUM">5000</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="movement_stop" id="1267">
+                                    <next>
+                                      <block type="expansion_gripper" id="1306" inline="true">
+                                        <value name="NUMBER">
+                                          <block type="math_number" id="1320">
+                                            <field name="NUM">3500</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="expansion_exp2power" id="1329">
+                                            <field name="SERVO">ON</field>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
