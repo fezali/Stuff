@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_repeat" id="1" inline="true" x="-180" y="-275">
+  <block type="controls_repeat" id="1" inline="true" x="-81" y="-298">
     <value name="TIMES">
       <block type="math_number" id="2">
         <field name="NUM">2</field>
@@ -48,22 +48,7 @@
                                   </block>
                                 </value>
                                 <next>
-                                  <block type="movement_stop" id="16">
-                                    <next>
-                                      <block type="expansion_gripper" id="17" inline="true">
-                                        <value name="NUMBER">
-                                          <block type="math_number" id="18">
-                                            <field name="NUM">3500</field>
-                                          </block>
-                                        </value>
-                                        <next>
-                                          <block type="expansion_exp2power" id="19">
-                                            <field name="SERVO">ON</field>
-                                          </block>
-                                        </next>
-                                      </block>
-                                    </next>
-                                  </block>
+                                  <block type="movement_stop" id="16"></block>
                                 </next>
                               </block>
                             </next>
